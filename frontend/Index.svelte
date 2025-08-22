@@ -292,8 +292,6 @@
 	}
 </script>
 
-<svelte:window on:keydown={handle_keydown} />
-
 <Block
 	{visible}
 	{elem_id}
@@ -312,7 +310,7 @@
 		/>
 	{/if}
 
-	<div class="timeline-container">
+	<div class="timeline-container" on:keydown={handle_keydown} tabindex="0">
 		<BlockTitle {show_label} info={undefined}>{label}</BlockTitle>
 
 		<div class="sticky-pane">
@@ -396,6 +394,10 @@
 		padding: 1rem;
 		border-radius: 0.5rem;
 		position: relative;
+	}
+	.timeline-container:focus {
+		outline: 2px solid #4791ff;
+		outline-offset: -1px;
 	}
 	.sticky-pane {
 		position: sticky;
