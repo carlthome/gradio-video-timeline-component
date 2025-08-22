@@ -1,4 +1,3 @@
-
 from .timelinecomponent import TimelineComponent
 
-__all__ = ['TimelineComponent']
+__all__ = ["TimelineComponent"]

@@ -10,7 +10,7 @@ app_file: space.py
 ---
 
 # `gradio_timelinecomponent`
-<img alt="Static Badge" src="https://img.shields.io/badge/version%20-%200.0.1%20-%20orange">  
+<img alt="Static Badge" src="https://img.shields.io/badge/version%20-%200.0.1%20-%20orange">
 
 Audio/video timeline
 
@@ -309,4 +309,3 @@ The code snippet below is accurate in cases where the component is used as both 
  ) -> dict | None:
      return value
  ```
- 
