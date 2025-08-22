@@ -26,6 +26,9 @@ jobs:
       - name: Install build tool
         run: pip install gradio
 
+      - name: Install ${{ vars.PACKAGE_NAME }}
+        run: gradio cc install
+
       - name: Build ${{ vars.PACKAGE_NAME }}
         run: gradio cc build
 
@@ -41,8 +44,6 @@ jobs:
     environment:
       name: PyPI
       url: https://pypi.org/project/${{ vars.PACKAGE_NAME }}/
-    permissions:
-      id-token: write
     steps:
       - name: Download ${{ vars.PACKAGE_NAME }} wheels
         uses: actions/download-artifact@v4
@@ -52,6 +53,3 @@ jobs:
 
       - name: Publish ${{ vars.PACKAGE_NAME }}
         uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          repository-url: https://upload.pypi.org/legacy/
-          password: ${{ secrets.PYPI_TOKEN }}
