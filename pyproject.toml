@@ -47,7 +47,7 @@ classifiers = [
 dev = ["build", "twine"]
 
 [tool.hatch.build]
-artifacts = ["/backend/gradio_timelinecomponent/templates", "*.pyi"]
+artifacts = ["/backend/gradio_timelinecomponent/templates", "*.pyi", "/Users/carlthome/Repos/epidemicsound/gemini-soundtracker/timelinecomponent/backend/gradio_timelinecomponent/templates"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["/backend/gradio_timelinecomponent"]

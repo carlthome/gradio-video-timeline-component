@@ -142,9 +142,6 @@ pip install gradio_timelinecomponent
 ## Usage
 
 ```python
-import os
-import sys
-
 import gradio as gr
 from gradio_timelinecomponent import TimelineComponent
 
