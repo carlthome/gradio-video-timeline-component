@@ -21,13 +21,13 @@
     "./package.json": "./package.json"
   },
   "dependencies": {
-    "@gradio/atoms": "0.16.3",
-    "@gradio/icons": "0.12.0",
-    "@gradio/statustracker": "0.10.15",
-    "@gradio/utils": "0.10.2"
+    "@gradio/atoms": "0.22.0",
+    "@gradio/icons": "0.15.1",
+    "@gradio/statustracker": "0.12.4",
+    "@gradio/utils": "0.10.4"
   },
   "devDependencies": {
-    "@gradio/preview": "0.14.0"
+    "@gradio/preview": "0.15.2"
   },
   "peerDependencies": {
     "svelte": "^4.0.0"
